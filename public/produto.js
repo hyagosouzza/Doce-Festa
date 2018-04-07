@@ -12,10 +12,12 @@
     firebase.initializeApp(config);
 
 
-    var app = angular.module("app", ["ngRoute", "firebase"]);
+    var app = angular.module("app", ["ngRoute", "firebase", "ngMask"]);
 
     app.controller("MyCtrl", ["$scope", "$firebaseArray",
         function ($scope, $firebaseArray) {
+
+            $scope.maskPhone = "";
 
             var db = firebase.firestore();
 
