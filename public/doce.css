@@ -167,11 +167,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3586', end
     text-align: center;
 }
 
+.tema-title {
+    color: white;
+    font-size: 15px;
+}
+
 #produto {
     margin-top: 25px;
     border: 1px solid #ccc;
     max-width: 100%;
     min-height: 333px;
+}
+
+#tema {
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.bg-pink {
+    background-color: #ff0066 !important;
+}
+
+.tag-temas {
+    margin-top: 30px;
 }
 
  div.card:hover {
