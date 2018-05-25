@@ -84,8 +84,9 @@
     content: url(img/oie.png);
 }
 
-#opa {
+#menu-bar {
     background-color: rgba(255,255,255,.85) !important;
+    margin-bottom: 30px;
 }
 
 #meio {
@@ -141,6 +142,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3586', end
 
 .btn-group {
     width: 100%;
+    display: inline-block !important;
 }
 
 #menu {
@@ -190,10 +192,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3586', end
     background-color: #ff0066 !important;
 }
 
-.tag-temas {
-    margin-top: 30px;
-}
-
  div.card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -210,9 +208,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3586', end
     text-decoration: none;
 }
 
-#content {
-    margin-top: 50px;
-}
  .d-inline-flex.p-2 {
      color: #ff0066;
      font-weight: bold;
@@ -226,4 +221,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3586', end
         padding-bottom: 20px;
         border-bottom: 1px solid #bfbfbf;
     }
+    #ultimo-hr {
+        display: none;
+    }
+    .h6.span {
+        font-size: 8px;
+    }
   }
+
+.vertical-tema {
+    height:250px;
+    border-left: 1px solid;
+    color:rgb(187, 184, 184);
+}
+
+.img-galery {
+    margin-bottom: 10px;
+}
+
+a img.img-thumbnail:hover {
+    background-color: orangered;
+}
+
+.bg-orangered {
+    background-color: orangered !important;
+}
+

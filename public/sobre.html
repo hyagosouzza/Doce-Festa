@@ -17,42 +17,9 @@
 
 <body>
 
-    <div id="opa" class="main bg-white">
-        <nav class="container navbar navbar-expand-lg navbar-light">
-            <a class="img-normal navbar-brand" href="/">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <menu-bar></menu-bar>
 
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a id="nav" class="nav-link" href="./produtos.html">Produtos
-                        </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a id="nav" class="nav-link" href="./temas.html">Temas decorativos</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a id="nav" class="nav-link" href="./marcas.html">Marcas</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a id="nav" class="nav-link active-page" href="./sobre.html">A loja</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    
-    <div class="container" id="content">
+    <div class="container">
         <div class="row">
             <div id="menu" class="col-md-4">
                 <div class="list-group" id="list-tab" role="tablist">
@@ -73,102 +40,10 @@
             </div>
         </div>
     </div>
-    <div id="rodape">
-        <div class="container">
-            <div class="row" align="middle">
-                <div class="col-md-4 align-self-center">
-                    <a target="_blank" href="https://www.facebook.com/docefesta02/">
-                        <img src="img/face1.png">
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/docefesta0/" style="padding-left:20px">
-                        <img src="img/insta1.png">
-                    </a>
-                    <a href="" data-toggle="modal" data-target="#exampleModa2" style="padding-left:20px">
-                        <img src="img/gmail.png">
-                    </a>
-                </div>
-                <div class="col-md-4 align-self-center">
-                    <br>
-                    <img src="img/doce1.jpg" alt="">
-                    <br>
-                    <br>
-                    <h6>
-                        <span>
-                            <img src="img/point.png">
-                        </span>Av. José Bonifácio, Nº373 - Central, Jussara - GO, 76270-000</h6>
-                </div>
-                <div class=" col-md-4 align-self-center">
-                    <h5 class="d-inline-flex p-2">Contato</h5>
-                    <h6>
-                        <span>
-                            <img src="img/phone.png" alt="">
-                        </span>(62) 3373-2854</h6>
-                    <h6 style="padding-left:9px">
-                        <span>
-                            <img src="img/whats.png" alt="">
-                        </span>(62) 93373-2854</h6>
-                    <h6 style="padding-left:75px">
-                        <span>
-                            <img src="img/mail.png" alt="">
-                        </span>docefesta.jsa@gmail.com</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
+    
+    <rodape></rodape>
 
-    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Enviar Mensagem</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="https://us-central1-doce-e-festa.cloudfunctions.net/enviarEmail" method="post">
-                        <div class="form-group">
-                            <label class="col-form-label">Nome:</label>
-                            <input type="text" required="required" class="form-control" name="nome">
-                        </div>
-                        <div class="form-group">
-                            <label class="col-form-label">Email:</label>
-                            <input type="email" required="required" class="form-control" name="destinatarios">
-                        </div>
-                        <div class="form-group">
-                            <label class="col-form-label">Telefone:</label>
-                            <input type="text" required="required" name="telefone" class="form-control" ng-model="maskPhone" mask="(99)99999-9999">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Mensagem:</label>
-                            <textarea required="required" class="form-control" name="corpo"></textarea>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                            <input type="submit" class="btn btn-primary" value="Enviar" data-toggle="modal" data-target="#exampleModaB">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="exampleModaB" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Sua mensagem foi enviada com sucesso!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Você receberá um email de confirmação, entraremos em contato em até 2 dias úteis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <email-modal></email-modal>
 
     <!-- AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
