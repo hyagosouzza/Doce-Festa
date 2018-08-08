@@ -1,702 +1,154 @@
-[debug] [2018-04-07T20:48:40.122Z] ----------------------------------------------------------------------
-[debug] [2018-04-07T20:48:40.123Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-07T20:48:40.124Z] CLI Version:   3.16.0
-[debug] [2018-04-07T20:48:40.124Z] Platform:      win32
-[debug] [2018-04-07T20:48:40.124Z] Node Version:  v9.4.0
-[debug] [2018-04-07T20:48:40.124Z] Time:          Sat Apr 07 2018 17:48:40 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:48:40.124Z] ----------------------------------------------------------------------
+[debug] [2018-08-08T19:20:04.944Z] ----------------------------------------------------------------------
+[debug] [2018-08-08T19:20:04.946Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-08-08T19:20:04.946Z] CLI Version:   3.19.3
+[debug] [2018-08-08T19:20:04.946Z] Platform:      win32
+[debug] [2018-08-08T19:20:04.946Z] Node Version:  v9.4.0
+[debug] [2018-08-08T19:20:04.947Z] Time:          Wed Aug 08 2018 16:20:04 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:04.947Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-07T20:48:40.135Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-07T20:48:40.135Z] > authorizing via signed-in user
-[debug] [2018-04-07T20:48:40.136Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-07T20:48:40.137Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
+[debug] [2018-08-08T19:20:04.955Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-08T19:20:04.956Z] > authorizing via signed-in user
+[debug] [2018-08-08T19:20:04.957Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-08T19:20:04.957Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/tcMHjEI2LcBIuDOqwrkWTZB5rhs-UaNc0DxKcjb7VsY',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sat Apr 07 2018 17:48:40 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:48:43.761Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-07T20:48:43.819Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
+ Wed Aug 08 2018 16:20:04 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:05.407Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T19:20:05.459Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
   
- Sat Apr 07 2018 17:48:43 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:48:48.058Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-07T20:48:48.059Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
+ Wed Aug 08 2018 16:20:05 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:06.248Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T19:20:06.249Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
   
- Sat Apr 07 2018 17:48:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:48:52.372Z] <<< HTTP RESPONSE 200
+ Wed Aug 08 2018 16:20:06 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:07.097Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T19:20:07.099Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
+  
+ Wed Aug 08 2018 16:20:07 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:08.221Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
 [info] 
-[debug] [2018-04-07T20:48:52.377Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-08-08T19:20:22.722Z] Fetching environment
+[debug] [2018-08-08T19:20:22.730Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329:getServerAppConfig  
   
- Sat Apr 07 2018 17:48:52 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:49:03.176Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-07T20:49:03.181Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
+ Wed Aug 08 2018 16:20:22 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:22.731Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
   
- Sat Apr 07 2018 17:49:03 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-07T20:49:09.541Z] <<< HTTP RESPONSE 200
+ Wed Aug 08 2018 16:20:22 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T19:20:23.316Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T19:20:23.317Z] Starting @google-cloud/functions-emulator
+[debug] [2018-08-08T19:20:23.387Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
-[debug] [2018-04-09T11:16:11.455Z] ----------------------------------------------------------------------
-[debug] [2018-04-09T11:16:11.462Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-09T11:16:11.463Z] CLI Version:   3.16.0
-[debug] [2018-04-09T11:16:11.463Z] Platform:      win32
-[debug] [2018-04-09T11:16:11.463Z] Node Version:  v9.4.0
-[debug] [2018-04-09T11:16:11.465Z] Time:          Mon Apr 09 2018 08:16:11 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:11.465Z] ----------------------------------------------------------------------
+[debug] [2018-08-08T19:20:31.286Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2018-08-08T19:20:34.044Z] Error during trigger parsing:  Error occurred while parsing your function triggers.
+
+TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa\functions\index.js:13:44)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:21:11
+    at Object.<anonymous> (C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:75:3)
+[warn] !  functions: Error from emulator. Error occurred while parsing your function triggers.
+
+TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa\functions\index.js:13:44)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:21:11
+    at Object.<anonymous> (C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:75:3)
+[debug] [2018-08-08T19:20:34.047Z] 
+[debug] [2018-08-08T20:23:31.242Z] ----------------------------------------------------------------------
+[debug] [2018-08-08T20:23:31.243Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-08-08T20:23:31.244Z] CLI Version:   3.19.3
+[debug] [2018-08-08T20:23:31.244Z] Platform:      win32
+[debug] [2018-08-08T20:23:31.244Z] Node Version:  v9.4.0
+[debug] [2018-08-08T20:23:31.244Z] Time:          Wed Aug 08 2018 17:23:31 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:31.244Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-09T11:16:11.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-09T11:16:11.568Z] > authorizing via signed-in user
-[debug] [2018-04-09T11:16:11.572Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-09T11:16:11.573Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
+[debug] [2018-08-08T20:23:31.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-08T20:23:31.259Z] > authorizing via signed-in user
+[debug] [2018-08-08T20:23:31.260Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-08T20:23:31.261Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/tcMHjEI2LcBIuDOqwrkWTZB5rhs-UaNc0DxKcjb7VsY',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Apr 09 2018 08:16:11 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:12.139Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T11:16:12.231Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
+ Wed Aug 08 2018 17:23:31 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:31.749Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T20:23:31.824Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
   
- Mon Apr 09 2018 08:16:12 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:13.439Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T11:16:13.440Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
+ Wed Aug 08 2018 17:23:31 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:32.929Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T20:23:32.929Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
   
- Mon Apr 09 2018 08:16:13 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:14.220Z] <<< HTTP RESPONSE 200
+ Wed Aug 08 2018 17:23:32 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:33.652Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T20:23:33.654Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
+  
+ Wed Aug 08 2018 17:23:33 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:34.761Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
 [info] 
-[debug] [2018-04-09T11:16:14.230Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-08-08T20:23:36.268Z] Fetching environment
+[debug] [2018-08-08T20:23:36.276Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329:getServerAppConfig  
   
- Mon Apr 09 2018 08:16:14 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:15.293Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T11:16:15.298Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
+ Wed Aug 08 2018 17:23:36 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:36.277Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
   
- Mon Apr 09 2018 08:16:15 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T11:16:16.938Z] <<< HTTP RESPONSE 200
+ Wed Aug 08 2018 17:23:36 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-08T20:23:36.844Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-08T20:23:36.844Z] Starting @google-cloud/functions-emulator
+[debug] [2018-08-08T20:23:36.979Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
-[debug] [2018-04-09T13:00:53.217Z] ----------------------------------------------------------------------
-[debug] [2018-04-09T13:00:53.218Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-09T13:00:53.219Z] CLI Version:   3.16.0
-[debug] [2018-04-09T13:00:53.219Z] Platform:      win32
-[debug] [2018-04-09T13:00:53.219Z] Node Version:  v9.4.0
-[debug] [2018-04-09T13:00:53.219Z] Time:          Mon Apr 09 2018 10:00:53 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:53.219Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-09T13:00:53.228Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-09T13:00:53.229Z] > authorizing via signed-in user
-[debug] [2018-04-09T13:00:53.230Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-09T13:00:53.230Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Apr 09 2018 10:00:53 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:53.862Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T13:00:53.907Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Mon Apr 09 2018 10:00:53 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:55.886Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T13:00:55.887Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Mon Apr 09 2018 10:00:55 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:56.604Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-04-09T13:00:56.611Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Mon Apr 09 2018 10:00:56 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:57.718Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T13:00:57.721Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Mon Apr 09 2018 10:00:57 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-09T13:00:58.549Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-08-08T20:23:40.186Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2018-08-08T20:23:40.784Z] Error during trigger parsing:  Error occurred while parsing your function triggers.
 
-[debug] [2018-04-10T11:12:01.835Z] ----------------------------------------------------------------------
-[debug] [2018-04-10T11:12:01.843Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-10T11:12:01.843Z] CLI Version:   3.16.0
-[debug] [2018-04-10T11:12:01.843Z] Platform:      win32
-[debug] [2018-04-10T11:12:01.843Z] Node Version:  v9.4.0
-[debug] [2018-04-10T11:12:01.845Z] Time:          Tue Apr 10 2018 08:12:01 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:01.845Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-10T11:12:01.908Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-10T11:12:01.908Z] > authorizing via signed-in user
-[debug] [2018-04-10T11:12:01.925Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-10T11:12:01.926Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Apr 10 2018 08:12:01 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:02.471Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T11:12:02.537Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 08:12:02 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:04.019Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T11:12:04.020Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Tue Apr 10 2018 08:12:04 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:04.759Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-04-10T11:12:04.767Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 08:12:04 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:05.897Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T11:12:05.898Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Tue Apr 10 2018 08:12:05 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:12:07.627Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
+TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa\functions\index.js:13:44)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:21:11
+    at Object.<anonymous> (C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:75:3)
+[warn] !  functions: Error from emulator. Error occurred while parsing your function triggers.
 
-[debug] [2018-04-10T11:19:46.056Z] ----------------------------------------------------------------------
-[debug] [2018-04-10T11:19:46.058Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-10T11:19:46.058Z] CLI Version:   3.16.0
-[debug] [2018-04-10T11:19:46.058Z] Platform:      win32
-[debug] [2018-04-10T11:19:46.058Z] Node Version:  v9.4.0
-[debug] [2018-04-10T11:19:46.058Z] Time:          Tue Apr 10 2018 08:19:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:19:46.058Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-10T11:19:46.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-10T11:19:46.072Z] > authorizing via signed-in user
-[debug] [2018-04-10T11:19:46.074Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 08:19:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:19:47.416Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T11:19:47.421Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Tue Apr 10 2018 08:19:47 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:19:48.244Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-04-10T11:19:48.250Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 08:19:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:19:49.323Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T11:19:49.324Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Tue Apr 10 2018 08:19:49 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T11:19:50.255Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-04-10T20:21:18.394Z] ----------------------------------------------------------------------
-[debug] [2018-04-10T20:21:18.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-10T20:21:18.397Z] CLI Version:   3.16.0
-[debug] [2018-04-10T20:21:18.397Z] Platform:      win32
-[debug] [2018-04-10T20:21:18.397Z] Node Version:  v9.4.0
-[debug] [2018-04-10T20:21:18.398Z] Time:          Tue Apr 10 2018 17:21:18 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:18.398Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-10T20:21:18.478Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-10T20:21:18.479Z] > authorizing via signed-in user
-[debug] [2018-04-10T20:21:18.485Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-10T20:21:18.504Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Tue Apr 10 2018 17:21:18 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:19.106Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T20:21:19.209Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 17:21:19 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:20.432Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T20:21:20.433Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Tue Apr 10 2018 17:21:20 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:21.289Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-04-10T20:21:21.292Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Tue Apr 10 2018 17:21:21 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:22.455Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-10T20:21:22.457Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Tue Apr 10 2018 17:21:22 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-10T20:21:23.396Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-04-13T11:22:36.699Z] ----------------------------------------------------------------------
-[debug] [2018-04-13T11:22:36.701Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-13T11:22:36.701Z] CLI Version:   3.16.0
-[debug] [2018-04-13T11:22:36.701Z] Platform:      win32
-[debug] [2018-04-13T11:22:36.701Z] Node Version:  v9.4.0
-[debug] [2018-04-13T11:22:36.702Z] Time:          Fri Apr 13 2018 08:22:36 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:36.702Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-13T11:22:36.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-13T11:22:36.792Z] > authorizing via signed-in user
-[debug] [2018-04-13T11:22:36.793Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-04-13T11:22:36.793Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri Apr 13 2018 08:22:36 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:37.316Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-13T11:22:37.363Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri Apr 13 2018 08:22:37 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:38.710Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-13T11:22:38.712Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri Apr 13 2018 08:22:38 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:39.821Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-04-13T11:22:39.823Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri Apr 13 2018 08:22:39 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:40.897Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-13T11:22:40.898Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri Apr 13 2018 08:22:40 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-13T11:22:42.695Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-17T12:10:55.368Z] ----------------------------------------------------------------------
-[debug] [2018-05-17T12:10:55.374Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-17T12:10:55.374Z] CLI Version:   3.16.0
-[debug] [2018-05-17T12:10:55.375Z] Platform:      win32
-[debug] [2018-05-17T12:10:55.375Z] Node Version:  v9.4.0
-[debug] [2018-05-17T12:10:55.376Z] Time:          Thu May 17 2018 09:10:55 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:55.376Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-17T12:10:55.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-17T12:10:55.455Z] > authorizing via signed-in user
-[debug] [2018-05-17T12:10:55.459Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-17T12:10:55.459Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Thu May 17 2018 09:10:55 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:55.963Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T12:10:56.001Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 09:10:56 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:57.238Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T12:10:57.239Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Thu May 17 2018 09:10:57 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:57.961Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-17T12:10:57.967Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 09:10:57 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:59.096Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T12:10:59.097Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Thu May 17 2018 09:10:59 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T12:10:59.957Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-17T13:53:24.351Z] ----------------------------------------------------------------------
-[debug] [2018-05-17T13:53:24.353Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-17T13:53:24.353Z] CLI Version:   3.16.0
-[debug] [2018-05-17T13:53:24.353Z] Platform:      win32
-[debug] [2018-05-17T13:53:24.353Z] Node Version:  v9.4.0
-[debug] [2018-05-17T13:53:24.354Z] Time:          Thu May 17 2018 10:53:24 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:24.354Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-17T13:53:24.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-17T13:53:24.363Z] > authorizing via signed-in user
-[debug] [2018-05-17T13:53:24.364Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-17T13:53:24.365Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Thu May 17 2018 10:53:24 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:24.873Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T13:53:24.929Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 10:53:24 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:26.092Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T13:53:26.094Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Thu May 17 2018 10:53:26 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:26.982Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-17T13:53:26.990Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 10:53:26 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:28.052Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T13:53:28.053Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Thu May 17 2018 10:53:28 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T13:53:28.833Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-17T19:06:16.431Z] ----------------------------------------------------------------------
-[debug] [2018-05-17T19:06:16.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-17T19:06:16.433Z] CLI Version:   3.16.0
-[debug] [2018-05-17T19:06:16.433Z] Platform:      win32
-[debug] [2018-05-17T19:06:16.433Z] Node Version:  v9.4.0
-[debug] [2018-05-17T19:06:16.434Z] Time:          Thu May 17 2018 16:06:16 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:16.434Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-17T19:06:16.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-17T19:06:16.516Z] > authorizing via signed-in user
-[debug] [2018-05-17T19:06:16.519Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-17T19:06:16.520Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Thu May 17 2018 16:06:16 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:17.028Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T19:06:17.112Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 16:06:17 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:19.657Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T19:06:19.657Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Thu May 17 2018 16:06:19 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:20.421Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-17T19:06:20.424Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Thu May 17 2018 16:06:20 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:21.528Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-17T19:06:21.528Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Thu May 17 2018 16:06:21 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-17T19:06:22.193Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-18T11:32:46.408Z] ----------------------------------------------------------------------
-[debug] [2018-05-18T11:32:46.415Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-18T11:32:46.415Z] CLI Version:   3.16.0
-[debug] [2018-05-18T11:32:46.416Z] Platform:      win32
-[debug] [2018-05-18T11:32:46.416Z] Node Version:  v9.4.0
-[debug] [2018-05-18T11:32:46.417Z] Time:          Fri May 18 2018 08:32:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:46.418Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-18T11:32:46.560Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-18T11:32:46.561Z] > authorizing via signed-in user
-[debug] [2018-05-18T11:32:46.568Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-18T11:32:46.569Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri May 18 2018 08:32:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:47.924Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T11:32:48.024Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 18 2018 08:32:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:49.239Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T11:32:49.242Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 18 2018 08:32:49 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:49.996Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-18T11:32:50.006Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 18 2018 08:32:50 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:51.118Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T11:32:51.119Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 18 2018 08:32:51 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T11:32:53.164Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-18T13:03:44.964Z] ----------------------------------------------------------------------
-[debug] [2018-05-18T13:03:44.974Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-18T13:03:44.975Z] CLI Version:   3.16.0
-[debug] [2018-05-18T13:03:44.976Z] Platform:      win32
-[debug] [2018-05-18T13:03:44.976Z] Node Version:  v9.4.0
-[debug] [2018-05-18T13:03:44.978Z] Time:          Fri May 18 2018 10:03:44 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:44.979Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-18T13:03:45.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-18T13:03:45.116Z] > authorizing via signed-in user
-[debug] [2018-05-18T13:03:45.124Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-18T13:03:45.125Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri May 18 2018 10:03:45 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:45.873Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T13:03:45.930Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 18 2018 10:03:45 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:47.312Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T13:03:47.313Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 18 2018 10:03:47 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:48.001Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-18T13:03:48.029Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 18 2018 10:03:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:49.272Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-18T13:03:49.273Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 18 2018 10:03:49 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-18T13:03:50.063Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-23T14:28:06.213Z] ----------------------------------------------------------------------
-[debug] [2018-05-23T14:28:06.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-23T14:28:06.215Z] CLI Version:   3.16.0
-[debug] [2018-05-23T14:28:06.215Z] Platform:      win32
-[debug] [2018-05-23T14:28:06.215Z] Node Version:  v9.4.0
-[debug] [2018-05-23T14:28:06.216Z] Time:          Wed May 23 2018 11:28:06 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:06.216Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-23T14:28:06.272Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-23T14:28:06.273Z] > authorizing via signed-in user
-[debug] [2018-05-23T14:28:06.275Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-23T14:28:06.275Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Wed May 23 2018 11:28:06 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:06.782Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-23T14:28:06.831Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Wed May 23 2018 11:28:06 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:08.044Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-23T14:28:08.045Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Wed May 23 2018 11:28:08 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:08.929Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-23T14:28:08.932Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Wed May 23 2018 11:28:08 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:10.073Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-23T14:28:10.074Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Wed May 23 2018 11:28:10 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-23T14:28:10.855Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-25T13:35:35.822Z] ----------------------------------------------------------------------
-[debug] [2018-05-25T13:35:35.824Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-25T13:35:35.824Z] CLI Version:   3.16.0
-[debug] [2018-05-25T13:35:35.824Z] Platform:      win32
-[debug] [2018-05-25T13:35:35.824Z] Node Version:  v9.4.0
-[debug] [2018-05-25T13:35:35.825Z] Time:          Fri May 25 2018 10:35:35 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:35.826Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-25T13:35:35.836Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-25T13:35:35.837Z] > authorizing via signed-in user
-[debug] [2018-05-25T13:35:35.838Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-25T13:35:35.839Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri May 25 2018 10:35:35 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:36.315Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T13:35:36.377Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 10:35:36 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:37.512Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T13:35:37.513Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 25 2018 10:35:37 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:38.293Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-25T13:35:38.295Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 10:35:38 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:39.407Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T13:35:39.408Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 25 2018 10:35:39 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T13:35:40.060Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-25T14:07:55.339Z] ----------------------------------------------------------------------
-[debug] [2018-05-25T14:07:55.341Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-25T14:07:55.341Z] CLI Version:   3.16.0
-[debug] [2018-05-25T14:07:55.341Z] Platform:      win32
-[debug] [2018-05-25T14:07:55.341Z] Node Version:  v9.4.0
-[debug] [2018-05-25T14:07:55.342Z] Time:          Fri May 25 2018 11:07:55 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:07:55.342Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-25T14:07:55.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-25T14:07:55.351Z] > authorizing via signed-in user
-[debug] [2018-05-25T14:07:55.352Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:07:55 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:07:56.492Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:07:56.493Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 25 2018 11:07:56 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:07:57.179Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-25T14:07:57.182Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:07:57 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:07:58.109Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:07:58.109Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 25 2018 11:07:58 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:07:58.604Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-25T14:14:34.073Z] ----------------------------------------------------------------------
-[debug] [2018-05-25T14:14:34.076Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-25T14:14:34.076Z] CLI Version:   3.16.0
-[debug] [2018-05-25T14:14:34.076Z] Platform:      win32
-[debug] [2018-05-25T14:14:34.076Z] Node Version:  v9.4.0
-[debug] [2018-05-25T14:14:34.077Z] Time:          Fri May 25 2018 11:14:34 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:14:34.077Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-25T14:14:34.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-25T14:14:34.087Z] > authorizing via signed-in user
-[debug] [2018-05-25T14:14:34.089Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:14:34 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:14:35.388Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:14:35.389Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 25 2018 11:14:35 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:14:36.136Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-25T14:14:36.139Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:14:36 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:14:37.220Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:14:37.221Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 25 2018 11:14:37 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:14:37.734Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-25T14:44:46.432Z] ----------------------------------------------------------------------
-[debug] [2018-05-25T14:44:46.434Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-25T14:44:46.434Z] CLI Version:   3.16.0
-[debug] [2018-05-25T14:44:46.434Z] Platform:      win32
-[debug] [2018-05-25T14:44:46.435Z] Node Version:  v9.4.0
-[debug] [2018-05-25T14:44:46.435Z] Time:          Fri May 25 2018 11:44:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:46.435Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-25T14:44:46.448Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-25T14:44:46.449Z] > authorizing via signed-in user
-[debug] [2018-05-25T14:44:46.450Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-05-25T14:44:46.450Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/WydAYgq1XtctzW3vis4AjkKR194RBycRyVWpJT0w8N0',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri May 25 2018 11:44:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:46.876Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:44:46.916Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:44:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:48.027Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:44:48.028Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 25 2018 11:44:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:48.774Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-25T14:44:48.779Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:44:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:49.839Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:44:49.840Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 25 2018 11:44:49 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:44:51.339Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-05-25T14:51:45.618Z] ----------------------------------------------------------------------
-[debug] [2018-05-25T14:51:45.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-05-25T14:51:45.621Z] CLI Version:   3.16.0
-[debug] [2018-05-25T14:51:45.621Z] Platform:      win32
-[debug] [2018-05-25T14:51:45.621Z] Node Version:  v9.4.0
-[debug] [2018-05-25T14:51:45.621Z] Time:          Fri May 25 2018 11:51:45 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:51:45.621Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-05-25T14:51:45.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-05-25T14:51:45.630Z] > authorizing via signed-in user
-[debug] [2018-05-25T14:51:45.632Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:51:45 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:51:46.751Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:51:46.752Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
-  
- Fri May 25 2018 11:51:46 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:51:47.601Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa'...
-[info] 
-[debug] [2018-05-25T14:51:47.610Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/doce-e-festa  
-  
- Fri May 25 2018 11:51:47 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:51:48.534Z] <<< HTTP RESPONSE 200
-[debug] [2018-05-25T14:51:48.535Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/497695728329/clients/_:getWebAppConfig  
-  
- Fri May 25 2018 11:51:48 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-05-25T14:51:49.117Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
+TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\hyago\OneDrive\Área de Trabalho\Doce-Festa\functions\index.js:13:44)
+    at Module._compile (module.js:660:30)
+    at Object.Module._extensions..js (module.js:671:10)
+    at Module.load (module.js:573:32)
+    at tryModuleLoad (module.js:513:12)
+    at Function.Module._load (module.js:505:3)
+    at Module.require (module.js:604:17)
+    at require (internal/module.js:11:18)
+    at C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:21:11
+    at Object.<anonymous> (C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\lib\triggerParser.js:75:3)
+[debug] [2018-08-08T20:23:40.786Z] 

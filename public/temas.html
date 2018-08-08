@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doce e Festa: Temas</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
     <link rel="icon" href="img/icon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./doce.css">
@@ -13,8 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
-
     <base href="/">
 
 </head>
@@ -22,7 +23,6 @@
 <body>
 
     <menu-bar></menu-bar>
-
     <div class="btn-group" align="middle">
         <button class="btn btn-danger" ng-click="filtrarTag('menina')">Meninas</button>
         <button class="btn btn-primary" ng-click="filtrarTag('menino')">Meninos</button>
@@ -30,13 +30,13 @@
     </div>
 
     <hr style="margin-top:10px">
-
     <div class="container">
         <div ng-repeat="item in temas | filter: {tag: tag} | orderBy:'name'">
+                <script type="text/javascript" src="js/slimbox2.js"></script>
             <div class="row">
                 <div class="col-md-3 animated fadeIn">
-                    <div class="card bg-orangered text-white" align="middle" style="box-shadow: none;">
-                        <img src={{item.url}} class="img-thumbnail bg-orangered" style="border: none;">
+                    <div class="card {{item.color}} text-white" align="middle" style="box-shadow: none;">
+                        <img src={{item.url}} class="img-thumbnail {{item.color}}" style="border: none;">
                         <div class="card-body">
                             <h5>{{item.name}}</h5>
                         </div>
@@ -45,15 +45,27 @@
                 <div class="col-md-1 vertical-tema"></div>
                 <div class="col-md-6">
                     <div class="row">
-                        <ng-repeat="imagem in item.imgs">
-                            <a class="col-md-3 img-galery" href="{{imagem.img}}" data-toggle="lightbox">
-                                <img src="{{imagem.img}}" class="img-fluid img-thumbnail">
-                            </a>
-                            </ng-repeat>
+                        <a class="col-md-3" href={{item.img1}} rel="lightbox-cats">
+                            <img ng-if="item.img1" class="img-thumbnail" src="{{item.img1}}">
+                        </a>
+                        <a class="col-md-3" href={{item.img2}} rel="lightbox-cats">
+                            <img ng-if="item.img2" class="img-thumbnail" src="{{item.img2}}">
+                        </a>
+                        <a class="col-md-3" href={{item.img3}} rel="lightbox-cats">
+                            <img ng-if="item.img3" class="img-thumbnail" src="{{item.img3}}">
+                        </a>
+                        <a class="col-md-3" href={{item.img4}} rel="lightbox-cats">
+                            <img ng-if="item.img4" class="img-thumbnail" src="{{item.img4}}">
+                        </a>
+                        <a class="col-md-3" href={{item.img5}} rel="lightbox-cats">
+                            <img ng-if="item.img5" class="img-thumbnail" src="{{item.img5}}">
+                        </a>
                     </div>
                 </div>
             </div>
+            <br>
         </div>
+    </div>
     </div>
 
     <rodape></rodape>
@@ -71,14 +83,12 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
     <script src="./script.js"></script>
+
 </body>
 
 </html>

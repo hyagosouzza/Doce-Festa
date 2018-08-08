@@ -247,3 +247,9 @@ a img.img-thumbnail:hover {
     background-color: orangered !important;
 }
 
+.div-btn-top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}

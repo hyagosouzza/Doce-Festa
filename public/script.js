@@ -1,21 +1,14 @@
 $(document).ready(function () {
-    $(document).mousemove(function () {
-        if (!justHidden) {
-            justHidden = false;
-            clearTimeout(j);
-            $('.btn-to-top').removeClass('hidden');
-            j = setTimeout('hide();', 1000);
-        }
-    });
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
     $('.list-group-item').click(function () {
         $('.list-group-item.active').removeClass('active');
         $(this).addClass('active');
         $('html, body').animate({
             scrollTop: $("#vertical").offset().top
+        }, 700);
+    })
+    $('.div-btn-top').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#row").offset().top
         }, 700);
     })
     $(function () {
@@ -38,6 +31,16 @@ $(document).ready(function () {
             $('.navbar-brand').removeClass('img-fixed');
             $('.navbar-brand').addClass('img-normal');
             $('.main').removeClass('animated fadeInDown');
+        }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+            $('.div-btn-top').addClass('animated fadeInUp');
+            $('.div-btn-top').css("display", "inline");
+
+        } else if ($(this).scrollTop() <= 200) {
+            $('.div-btn-top').removeClass('animated fadeInUp');
+            $('.div-btn-top').css("display", "none");
         }
     });
 });

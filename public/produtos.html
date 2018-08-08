@@ -70,8 +70,6 @@
                 </div>
             </div>
             <div id="vertical" class="col-md-9" align="middle">
-                <div class="align-self-center" ng-show="load === false">
-                </div>
                 <div class="row">
                     <div class="col-md-4 animated fadeIn container" ng-repeat="item in produtos | filter: {name: $ctrl.string, marca: marca, tag: prod} | orderBy:'name'">
                         <div id="produto" class="card" style="width: 18rem;" align="middle">
@@ -84,6 +82,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="div-btn-top">
+                <img src="img/arrow-top.png">
             </div>
         </div>
     </div>
