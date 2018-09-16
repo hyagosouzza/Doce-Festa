@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Doce e Festa: Produtos</title>
     <link rel="icon" href="img/icon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./doce.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <!-- or -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
     <base href="/">
@@ -34,7 +31,7 @@
                         Filtrar por marca {{marca}}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="" ng-repeat="item in marcas" ng-click="filtrarMarca(item.name)">{{item.name}}</a>
+                        <a class="dropdown-item" href="" ng-repeat="item in marcas" ng-click="filtrarMarca(item.nome)">{{item.nome}}</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="" ng-click="filtrarMarca()">Todas as marcas</a>
                     </div>
@@ -71,12 +68,12 @@
             </div>
             <div id="vertical" class="col-md-9" align="middle">
                 <div class="row">
-                    <div class="col-md-4 animated fadeIn container" ng-repeat="item in produtos | filter: {name: $ctrl.string, marca: marca, tag: prod} | orderBy:'name'">
+                    <div class="col-md-4 animated fadeIn container" ng-repeat="item in produtos | filter: {nome: $ctrl.string, marca: marca, tag: prod} | orderBy:'nome'">
                         <div id="produto" class="card" style="width: 18rem;" align="middle">
                             <a id="titulo">
                                 <img class="card-img-top" src={{item.url}} />
                                 <div class="card-body">
-                                    <h6 class="card-title">{{item.name}}</h6>
+                                    <h6 class="card-title">{{item.nome}}</h6>
                                 </div>
                             </a>
                         </div>
@@ -93,16 +90,9 @@
 
     <email-modal></email-modal>
 
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
     <script src="./ngMask.min.js"></script>
-
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
-
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="./papaparse/papaparse.js"></script>
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

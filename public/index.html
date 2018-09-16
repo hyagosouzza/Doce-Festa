@@ -2,18 +2,15 @@
 <html ng-app="app" ng-controller="MyCtrl">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="./doce.css" media="all">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Doce e Festa</title>
   <link rel="icon" href="img/icon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./doce.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <!-- or -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
     crossorigin="anonymous">
-    
+
 </head>
 
 <body>
@@ -53,13 +50,15 @@
         <div class="col-md-4">
           <img src="img/maps.png">
           <br>
-          <button id="ok" class="btn btn-success" data-toggle="popover" data-trigger="click" data-placement="bottom" title="Endereço"
-            data-content="Av. José Bonifácio, Nº373 - Central, Jussara - GO, 76270-000">Endereço</button>
+          <button id="ok" class="btn btn-success" data-toggle="popover" data-trigger="click" data-placement="bottom"
+            title="Endereço" data-content="Av. José Bonifácio, Nº373 - Central, Jussara - GO, 76270-000">Endereço</button>
         </div>
         <div class="col-md-4">
           <img src="img/time.png">
           <br>
-          <button id="ok" class="btn btn-success" data-toggle="popover" data-placement="bottom" title="Horário de funcionamento" data-content="Segunda - Sexta: 08:00 - 18:00 <br> Sábados: 08:00 - 13:00 <br> Domingos: Fechado">Horário de funcionamento</button>
+          <button id="ok" class="btn btn-success" data-toggle="popover" data-placement="bottom" title="Horário de funcionamento"
+            data-content="Segunda - Sexta: 08:00 - 18:00 <br> Sábados: 08:00 - 13:00 <br> Domingos: Fechado">Horário
+            de funcionamento</button>
         </div>
         <div class="col-md-4">
           <a href="">
@@ -75,26 +74,17 @@
   <rodape></rodape>
 
   <email-modal></email-modal>
-  
-  <!-- AngularJS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
-  <script src="ngMask.min.js"></script>
 
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-
-  <!-- AngularFire -->
-  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-  <script src="app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="./ngMask.min.js"></script>
+  <script src="./papaparse/papaparse.js"></script>
+  <script src="./app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
   <script src="./script.js"></script>
-  
 </body>
 
 </html>

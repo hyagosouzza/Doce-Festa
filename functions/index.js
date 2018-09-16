@@ -1,17 +1,10 @@
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
-
 'use strict';
 const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 const cors = require('cors')({ origin: true });
 
 const gmailEmail = functions.config().gmail.email;
-const gmailPassword = functions.config().gmail.password;
+const gmailPassword = functions.config().gmail.password;[[[]]]
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {

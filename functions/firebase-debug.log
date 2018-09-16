@@ -1,21 +1,47 @@
-[debug] [2018-04-05T11:36:11.324Z] ----------------------------------------------------------------------
-[debug] [2018-04-05T11:36:11.326Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase functions:config:set gmail.email=myusername@gmail.com gmail.password=secretpassword
-[debug] [2018-04-05T11:36:11.326Z] CLI Version:   3.16.0
-[debug] [2018-04-05T11:36:11.326Z] Platform:      win32
-[debug] [2018-04-05T11:36:11.326Z] Node Version:  v9.4.0
-[debug] [2018-04-05T11:36:11.326Z] Time:          Thu Apr 05 2018 08:36:11 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-05T11:36:11.326Z] ----------------------------------------------------------------------
+[debug] [2018-09-15T03:25:27.889Z] ----------------------------------------------------------------------
+[debug] [2018-09-15T03:25:27.892Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hyago\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only functions
+[debug] [2018-09-15T03:25:27.892Z] CLI Version:   4.0.3
+[debug] [2018-09-15T03:25:27.892Z] Platform:      win32
+[debug] [2018-09-15T03:25:27.892Z] Node Version:  v8.11.3
+[debug] [2018-09-15T03:25:27.892Z] Time:          Sat Sep 15 2018 00:25:27 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-09-15T03:25:27.892Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-05T11:36:11.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-05T11:36:11.336Z] > authorizing via signed-in user
-[debug] [2018-04-05T11:36:11.338Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
+[debug] [2018-09-15T03:25:27.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-15T03:25:27.901Z] > authorizing via signed-in user
+[debug] [2018-09-15T03:25:27.903Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/doce-e-festa  
   
- Thu Apr 05 2018 08:36:11 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-05T11:36:12.479Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-05T11:36:12.481Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
+ Sat Sep 15 2018 00:25:27 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-09-15T03:25:28.916Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-15T03:25:28.918Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/doce-e-festa/tokens  
   
- Thu Apr 05 2018 08:36:12 GMT-0300 (Hora oficial do Brasil)
-[debug] [2018-04-05T11:36:13.329Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-05T11:36:13.332Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/doce-e-festa?view=CONSUMER_VIEW  
+ Sat Sep 15 2018 00:25:28 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-09-15T03:25:29.641Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'doce-e-festa'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-09-15T03:25:34.468Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "firebase-admin": "~5.13.0",
+    "firebase-functions": "^2.0.0",
+    "nodemailer": "^4.6.8"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-09-15T03:25:34.469Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/doce-e-festa?view=CONSUMER_VIEW  
   
- Thu Apr 05 2018 08:36:13 GMT-0300 (Hora oficial do Brasil)
+ Sat Sep 15 2018 00:25:34 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-09-15T03:25:34.469Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/doce-e-festa?view=CONSUMER_VIEW  
+  
+ Sat Sep 15 2018 00:25:34 GMT-0300 (Hora oficial do Brasil)
